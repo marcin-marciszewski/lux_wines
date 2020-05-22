@@ -1,66 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Lux wines is a premium wine subscription service with the mission to bring the most sophisticated and luxury wines to all connoisseurs." />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
-        rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css"
-        integrity="sha256-6Wozb/CzRANFOaGqN+u/uRT7kcffVIQt9OhOuuA6I9o=" crossorigin="anonymous" />
+    <meta
+      name="description"
+      content="Lux wines is a premium wine subscription service with the mission to bring the most sophisticated and luxury wines to all connoisseurs."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="img/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="img/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css"
+      integrity="sha256-6Wozb/CzRANFOaGqN+u/uRT7kcffVIQt9OhOuuA6I9o="
+      crossorigin="anonymous"
+    />
     <title>Lux wines</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="container">
-                <img src="/img/logo.png" class="logo" alt="Lux wines logo" />
-                <ul class="main-nav js--main-nav">
-                    <li><a href="#features">Wine delivery</a></li>
-                    <li><a href="#works">How it works</a></li>
-                    <li><a href="#cities">Our cities</a></li>
-                    <li><a href="#plans">Sign up</a></li>
-                </ul>
-                <a class="mobile-nav-icon">
-                    <ion-icon class="js--nav-icon" name="reorder-three"></ion-icon>
-                </a>
-            </div>
-        </nav>
-        <div class="hero-text-box">
-            <h1>Discover the world of wine. <br />Let us be your guide.</h1>
-            <a class="btn btn-full js--scroll-to-plans" href="#">I'm thirsty</a>
-            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+      <nav>
+        <div class="container">
+          <img src="/img/logo.png" class="logo" alt="Lux wines logo" />
+          <img
+            src="/img/logo-black.png"
+            class="logo-black"
+            alt="Lux wines logo"
+          />
+          <ul class="main-nav js--main-nav">
+            <li><a href="#features">Wine delivery</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#plans">Sign up</a></li>
+          </ul>
+          <a class="mobile-nav-icon">
+            <ion-icon class="js--nav-icon" name="reorder-three"></ion-icon>
+          </a>
         </div>
+      </nav>
+      <div class="hero-text-box">
+        <h1>Discover the world of wine. <br />Let us be your guide.</h1>
+        <a class="btn btn-full js--scroll-to-plans" href="#">I'm thirsty</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+      </div>
     </header>
 
+    <section id="features" class="section-features js--section-features">
+      <div class="container">
+        <h2>Get food fast &mdash; not fast food</h2>
+        <p class="long-copy">
+          Hello, we’re Lux wines, your new premium wine subscription service. We
+          know you’re always busy. No time for shopping around. So let us take
+          care of that, we’re really good at it, we promise!
+        </p>
+      </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"
-        integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
-        integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"
-        integrity="sha256-8fF/6nzuSprnSYGykwsQo6r9cT9FZAgN7yTl+4NCozg=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-        integrity="sha256-w49DIDk8itgSjjuoof5lTxYKwcjWJ7Z2sRW3nU1StNA=" crossorigin="anonymous"></script>
+      <div class="section-features__cards container js--wp-1">
+        <div class="box">
+          <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
+          <h3>Up to 365 days/year</h3>
+          <p>
+            Never waste time shopping wine! We really mean that. Our
+            subscription plans include up to 365 days/year coverage. You can
+            also choose to order more flexibly if that's your style.
+          </p>
+        </div>
+        <div class="box">
+          <ion-icon class="icon-big" name="stopwatch-outline"></ion-icon>
+          <h3>At your door in 24h</h3>
+          <p>
+            You're only 24 hours away from your next wine adventure delivered
+            right to your home. We work with the best vineyards around the word
+            to ensure that you're 100% happy.
+          </p>
+        </div>
+        <div class="box">
+          <ion-icon class="icon-big" name="nutrition-outline"></ion-icon>
+          <h3>100% organic</h3>
+          <p>
+            All our wines are produced in a traditional way from organic grapes.
+            The quality of our products is constantly monitored to eliminate any
+            traces of chemicals or pesticides.
+          </p>
+        </div>
+        <div class="box">
+          <ion-icon class="icon-big" name="cart-outline"></ion-icon>
+          <h3>Try something new</h3>
+          <p>
+            We don't limit our creativity, which means we are constantly looking
+            for new exciting wines. You can get access the most exotic products
+            thanks to our limited offers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"
+      integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+      integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"
+      integrity="sha256-8fF/6nzuSprnSYGykwsQo6r9cT9FZAgN7yTl+4NCozg="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha256-w49DIDk8itgSjjuoof5lTxYKwcjWJ7Z2sRW3nU1StNA="
+      crossorigin="anonymous"
+    ></script>
     <script src="/js/app.js"></script>
-</body>
-
+  </body>
 </html>
