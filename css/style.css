@@ -285,9 +285,8 @@ nav .container {
     display: block;
 }
 
-/* -------------------------------*/
-/* Features */
-/* -------------------------------*/
+
+/*------------------- Features------------------ */
 
 .section-features .long-copy {
     margin-bottom: 40px;
@@ -297,4 +296,40 @@ nav .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 5%;
+}
+
+/*------------------- Pics------------------ */
+.section-pics {
+    padding: 0;
+}
+
+.section-pics__showcase {
+    list-style: none;
+    width: 100%;
+    display: flex;
+}
+
+.section-pics__showcase li {
+    display: block;
+    width: 25%;
+}
+
+.section-pics__showcase-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.section-pics__showcase-photo img {
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.section-pics__showcase-photo img:hover {
+    opacity: 1;
+    transform: scale(1.04);
 }
