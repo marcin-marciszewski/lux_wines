@@ -7,8 +7,7 @@
       name="description"
       content="Lux Wines is a premium wine subscription service with the mission to bring the most sophisticated and luxury Wines to all connoisseurs."
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
       rel="stylesheet"
@@ -57,6 +56,8 @@
       integrity="sha256-6Wozb/CzRANFOaGqN+u/uRT7kcffVIQt9OhOuuA6I9o="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <title>Lux Wines</title>
   </head>
 
@@ -357,11 +358,9 @@
             <div class="section-plans__plan-box js--wp-4">
               <div>
                 <h3>Premium</h3>
-                <p class="section-plans__plan-price">
-                  $399<span>/ month</span>
-                </p>
+                <p class="section-plans__plan-price">$99<span>/ month</span></p>
                 <p class="section-plans__plan-price-meal">
-                  That's only 13.30$ per meal
+                  That's only 6.60$ per bottle
                 </p>
               </div>
               <div>
@@ -371,7 +370,7 @@
                       class="icon-small"
                       name="checkmark-outline"
                     ></ion-icon
-                    >1 meal every day
+                    >4 bottles every week
                   </li>
                   <li>
                     <ion-icon
@@ -385,7 +384,7 @@
                       class="icon-small"
                       name="checkmark-outline"
                     ></ion-icon
-                    >Access to newest creations
+                    >Access to newest discoveries
                   </li>
                   <li>
                     <ion-icon
@@ -405,9 +404,9 @@
             <div class="section-plans__plan-box">
               <div>
                 <h3>Pro</h3>
-                <p class="section-plans__plan-price">$149<span>/month</span></p>
+                <p class="section-plans__plan-price">$59<span>/month</span></p>
                 <p class="section-plans__plan-price-meal">
-                  That’s only 14.90$ per meal
+                  That’s only 7.40$ per bottle
                 </p>
               </div>
               <div>
@@ -417,7 +416,7 @@
                       class="icon-small"
                       name="checkmark-outline"
                     ></ion-icon
-                    >1 meal 10 days/month
+                    >2 bottles a week
                   </li>
                   <li>
                     <ion-icon
@@ -431,7 +430,7 @@
                       class="icon-small"
                       name="checkmark-outline"
                     ></ion-icon
-                    >Access to newest creations
+                    >Access to newest discoveries
                   </li>
                   <li>
                     <ion-icon
@@ -451,7 +450,9 @@
             <div class="section-plans__plan-box">
               <div>
                 <h3>Starter</h3>
-                <p class="section-plans__plan-price">19$<span>/ meal</span></p>
+                <p class="section-plans__plan-price">
+                  9.95$<span>/ meal</span>
+                </p>
                 <p class="section-plans__plan-price-meal">&nbsp;</p>
               </div>
               <div>
@@ -461,20 +462,21 @@
                       class="icon-small"
                       name="checkmark-outline"
                     ></ion-icon
-                    >1 meal every day
+                    >1 single bottle
                   </li>
                   <li>
                     <ion-icon
                       class="icon-small"
                       name="checkmark-outline"
                     ></ion-icon>
-                    Order from 8 am to 12 pm
+                    Order 24/7
                   </li>
                   <li>
                     <ion-icon
                       class="icon-small"
-                      name="close-outline"
-                    ></ion-icon>
+                      name="checkmark-outline"
+                    ></ion-icon
+                    >Newest discoveries - 12.95$
                   </li>
                   <li>
                     <ion-icon
@@ -493,6 +495,155 @@
         </div>
       </div>
     </section>
+
+    <section class="section-form">
+      <div class="container" id="form">
+        <h2>We're happy to hear from you</h2>
+      </div>
+      <div>
+        <form class="contact-form" action="mailer.php" method="post">
+          <div class="container">
+            <!-- <?php
+            if($_GET['success'] ==1){
+              echo"<div class=\"form-messages success\">
+              Thank you! Your message has been sent.
+            </div>"
+            }
+  
+            if($_GET['success'] == -1){
+              echo"  
+              <div class=\"form-messages error\">
+                Oops! Something went wrong. Please try again!
+              </div>"
+            }
+  
+            ?> -->
+          </div>
+          <div class="contact-form__name">
+            <div>
+              <label for="name">Name</label>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-form__email container">
+            <div>
+              <label for="email">Email</label>
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-form__how container">
+            <div>
+              <label for="find-us">How did you find us?</label>
+            </div>
+            <div>
+              <select name="find-us" id="find-us">
+                <option value="friend" selected>Friends</option>
+                <option value="search">Search engine</option>
+                <option value="ad">Advertisement</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="contact-form__newsletter container">
+            <div>
+              <label for="news">Newsletter</label>
+            </div>
+            <div>
+              <input type="checkbox" name="news" id="news" checked />Yes, please
+            </div>
+          </div>
+          <div class="contact-form__message container">
+            <div>
+              <label for="message">Drop us a line</label>
+            </div>
+            <div>
+              <textarea
+                name="message"
+                id="message"
+                cols="20"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="contact-form__submit container">
+            <div>
+              <input id="submit_form" type="submit" value="Send it" />
+            </div>
+            <div>
+              <label>&nbsp;</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer__links">
+        <div>
+          <ul class="footer-nav">
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Press</a>
+            </li>
+            <li>
+              <a href="#">iOs App</a>
+            </li>
+            <li>
+              <a href="#">Android App</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="social-links">
+            <li>
+              <a id="facebook" href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a id="twitter" href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a id="google" href="#">
+                <ion-icon name="logo-google"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a id="instagram" href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <p>Copyright &copy; 2020 by Lux Wines. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
